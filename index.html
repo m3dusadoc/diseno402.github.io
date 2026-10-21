@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de trabajos realizados por los estudiantes del CFL 402 de Morón">
+    <title>Portfolio CFL 402 - Morón</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente elegante y sobria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__subtitle">Centro de Formación Laboral N° 402</p>
+            <h1 class="hero__title">
+                Estos son los trabajos que hemos realizado durante el año<br>
+                <span class="hero__highlight">los ESTUDIANTES DEL CFL 402, MORÓN</span>
+            </h1>
+            <p class="hero__description">
+                Un espacio dedicado a mostrar el talento, el esfuerzo y la creatividad 
+                de quienes construyen el futuro con sus propias manos.
+            </p>
+            <a href="#proyectos" class="hero__cta">Ver proyectos</a>
+        </div>
+    </header>
+
+    <!-- ============ GALERÍA DE PROYECTOS ============ -->
+    <main class="main-content" id="proyectos">
+        <section class="gallery">
+            <div class="gallery__header">
+                <h2 class="gallery__title">Trabajos de los Estudiantes</h2>
+                <div class="gallery__filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="diseno">Diseño Web</button>
+                    <button class="filter-btn" data-filter="informatica">Informática</button>
+                    <button class="filter-btn" data-filter="otros">Otros</button>
+                </div>
+            </div>
+
+            <!-- Los proyectos se inyectan desde JavaScript -->
+            <div class="gallery__grid" id="projectsGrid">
+                <!-- Las tarjetas se generan dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__title">CFL N° 402 - Morón</p>
+            <p class="footer__text">Formando el trabajo del mañana, hoy.</p>
+            <p class="footer__credits">
+                © 2026 - Portal desarrollado como parte del proceso de enseñanza-aprendizaje
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
